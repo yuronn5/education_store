@@ -1,19 +1,25 @@
-import './About.css';
-import about_img from '../../assets/about.png';
-import play_icon from '../../assets/play-icon.png';
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import './About.css'
+import about_img from '../../assets/about.png'
+import play_icon from '../../assets/play-icon.png'
 
-const About = () => {
+// eslint-disable-next-line react/prop-types
+const About = ({setPlayState}) => {
   return (
     <div className='about'>
         <div className="about-left">
-            <img src={about_img} alt="about" className='about-img' />
-            <img src={play_icon} alt="play"  className='play-icon' />
+            <img src={about_img} alt="" className='about-img'/>
+            <img src={play_icon} alt="" className='play-icon' onClick={()=>{setPlayState(true)}}/>
         </div>
         <div className="about-right">
-            <h3>About University</h3>
-            <h2>Naturing tomorrows leaders today</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde reprehenderit rerum perspiciatis deserunt amet molestiae consequuntur inventore blanditiis natus eaque dolores temporibus ipsam provident cumque exercitationem, reiciendis dolore, neque quo quibusdam nesciunt. Voluptates ipsam sint ab possimus, laborum iusto amet rem, nobis explicabo alias veniam dolores temporibus dolore ea. Nemo beatae quod exercitationem, soluta nam tenetur totam blanditiis quisquam labore eos dolor culpa omnis incidunt id amet vero iure voluptatem a obcaecati inventore dignissimos qui. Similique at porro ullam optio ipsam nihil, amet eos ut, vel id nam vitae quidem numquam magni ea blanditiis assumenda veniam rem velit. Quis, omnis.</p>
+            <h3>ABOUT UNIVERSITY</h3>
+            <h2>Nurturing Tomorrows Leaders Today</h2>
+            <p>Embark on a transformative educational journey with our universitys comprehensive education programs. Our cutting-edge curriculum is designed to empower students with the knowledge, skills, and experiences needed to excel in the dynamic field of education.</p>
+            <p>With a focus on innovation, hands-on learning, and personalized mentorship, our programs prepare aspiring educators to make a meaningful impact in classrooms, schools, and communities.</p>
+            <p>Whether you aspire to become a teacher, administrator, counselor, or educational leader, our diverse range of programs offers the perfect pathway to achieve your goals and unlock your full potential in shaping the future of education.</p>
         </div>
+      
     </div>
   )
 }
